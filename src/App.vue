@@ -35,7 +35,7 @@
           </v-list-item-icon>
           <v-list-item-title>Главная</v-list-item-title>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item link to="/user" exact>
           <v-list-item-icon>
             <v-icon>mdi-account-outline</v-icon>
           </v-list-item-icon>
@@ -50,11 +50,11 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-content class="px-12 py-3" app>
+    <v-main class="px-12 py-3" app>
       <v-container fluid>
         <router-view />
       </v-container>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
